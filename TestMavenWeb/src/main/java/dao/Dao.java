@@ -10,6 +10,7 @@ import metier.Client;
 
 public class Dao implements IDao {
 
+	@Override
 	public long addClient(Client c) {
 		try {
 			// 1- charger le pilote
@@ -36,5 +37,6 @@ public class Dao implements IDao {
 		}
 		return c.getId();
 	}
+
 
 }
